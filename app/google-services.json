@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "566274721942",
+    "project_id": "capstone-project-fbebb",
+    "storage_bucket": "capstone-project-fbebb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566274721942:android:2e92761c119354bc719ab7",
+        "android_client_info": {
+          "package_name": "com.example.vchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566274721942-poqnbmlrqkuitnnfmru576s7sb0rcrh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWoHsCfKZXsN7N-oDTC2YmLgETouZ3drQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566274721942-poqnbmlrqkuitnnfmru576s7sb0rcrh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
