@@ -20,43 +20,41 @@ public class Login extends AppCompatActivity {
 
     EditText emailBox, passwordBox;
     Button loginBtn, signupBtn;
-
     FirebaseAuth auth;
-
     ProgressDialog dialog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
         dialog = new ProgressDialog(this);
-        dialog.setMessage("Please wait...");
-        auth = FirebaseAuth.getInstance();
+        dialog.setMessage("Please Wait...");
+        auth=FirebaseAuth.getInstance();
 
-        emailBox = findViewById(R.id.emailBox);
-        passwordBox = findViewById(R.id.passwordBox);
+        emailBox= findViewById(R.id.emailBox);
+        passwordBox= findViewById(R.id.passwordBox);
 
-        loginBtn = findViewById(R.id.loginBtn);
-        signupBtn = findViewById(R.id.createBtn);
+        loginBtn= findViewById(R.id.loginBtn);
+        signupBtn= findViewById(R.id.createBtn);
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialog.show();
-                String email, password;
-                email = emailBox.getText().toString();
-                password = passwordBox.getText().toString();
 
-                auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                dialog.show();
+                String email,password;
+                email=emailBox.getText().toString();
+                password=passwordBox.getText().toString();
+                System.out.println("Email:"+email+"/n Pass"+password);
+                auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         dialog.dismiss();
-                        if(task.isSuccessful())
-                        {
+                        if(task.isSuccessful()){
+
                             startActivity(new Intent(Login.this, DashboardActivity.class));
-                        } else {
-                            Toast.makeText(Login.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(Login.this,task.getException().getLocalizedMessage() ,Toast.LENGTH_LONG).show();
                         }
                     }
                 });
@@ -64,10 +62,12 @@ public class Login extends AppCompatActivity {
         });
 
         signupBtn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Login.this, signup.class));
             }
         });
     }
+
 }

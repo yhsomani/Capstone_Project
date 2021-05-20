@@ -25,6 +25,7 @@
         android:textColorHint="@color/white">
 
         <EditText
+            android:id="@+id/emailBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -47,6 +48,7 @@
         app:passwordToggleTint="@color/white">
 
         <EditText
+            android:id="@+id/passwordBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
