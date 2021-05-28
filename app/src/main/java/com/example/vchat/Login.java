@@ -45,13 +45,12 @@ public class Login extends AppCompatActivity {
                 String email,password;
                 email=emailBox.getText().toString();
                 password=passwordBox.getText().toString();
-                System.out.println("Email:"+email+"/n Pass"+password);
+//                System.out.println("Email:"+email+"/n Pass"+password);
                 auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         dialog.dismiss();
                         if(task.isSuccessful()){
-
                             startActivity(new Intent(Login.this, DashboardActivity.class));
                         }else {
                             Toast.makeText(Login.this,task.getException().getLocalizedMessage() ,Toast.LENGTH_LONG).show();
@@ -62,7 +61,6 @@ public class Login extends AppCompatActivity {
         });
 
         signupBtn.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Login.this, signup.class));
