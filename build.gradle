@@ -3,6 +3,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        jcenter()
 
     }
     dependencies {
@@ -17,10 +18,11 @@ allprojects {
     repositories {
         google()  // Google's Maven repository
         mavenCentral()
-
+        jcenter()
         maven {
-            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
-        }
+            url "https://jitpack.io"
+            }
+        maven { url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases" }
     }
 }
 

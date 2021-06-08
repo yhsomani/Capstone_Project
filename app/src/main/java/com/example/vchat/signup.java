@@ -61,6 +61,7 @@ public class signup extends AppCompatActivity {
                                     .document().set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
+                                    Toast.makeText(signup.this, "register successful", Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(signup.this, Login.class));
                                 }
                             });
