@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_undo" type="id"/>
+    <item name="btn_save" type="id"/>
+    <item name="btn_color" type="id"/>
+    <item name="btn_stroke" type="id"/>
+    <item name="rangebar" type="id"/>
+    <item name="draw_view" type="id"/>
+</resources>
