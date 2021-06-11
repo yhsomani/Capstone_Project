@@ -1,5 +1,9 @@
 package com.example.vchat;
-
+/*
+ ****************************
+ * Develop by Yash Somani
+ * **************************
+ */
 import android.graphics.Path;
 
 public class Stroke {

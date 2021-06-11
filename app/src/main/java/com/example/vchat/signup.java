@@ -2,7 +2,11 @@ package com.example.vchat;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
+/*
+ ****************************
+ * Develop by Yash Somani
+ * **************************
+ */
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;

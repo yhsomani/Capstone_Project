@@ -1,5 +1,9 @@
 package com.example.vchat;
-
+/*
+ ****************************
+ * Develop by Yash Somani
+ * **************************
+ */
 import android.content.ContentValues;
 import android.graphics.Bitmap;
 import android.graphics.Color;

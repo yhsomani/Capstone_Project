@@ -1,5 +1,9 @@
 package com.example.vchat;
-
+/*
+****************************
+* Develop by Yash Somani
+* **************************
+ */
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -18,7 +22,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import org.jitsi.meet.sdk.JitsiMeet;
 import org.jitsi.meet.sdk.JitsiMeetActivity;
 import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;
-
+/*
+ ****************************
+ * Develop by Yash Somani
+ * **************************
+ */
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -103,7 +111,7 @@ public class HomeActivity extends Fragment {
                 Intent intent = new Intent(android.content.Intent.ACTION_SEND);
                 String shareBody = "Required Meeting Code: "+ secretCodeBox.getText().toString();
                 intent.setType("text/plain");
-//                intent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Vchat");
+//                intent.putExtra(android.content.Intent.EXTRA_SUBJECT, "VClass");
                 intent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
                 startActivity(intent);
             }

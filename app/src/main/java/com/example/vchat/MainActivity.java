@@ -1,6 +1,10 @@
 package com.example.vchat;
 
-
+/*
+ ****************************
+ * Develop by Yash Somani
+ * **************************
+ */
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;

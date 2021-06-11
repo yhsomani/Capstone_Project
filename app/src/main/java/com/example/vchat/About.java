@@ -1,5 +1,9 @@
 package com.example.vchat;
-
+/*
+ ****************************
+ * Develop by Yash Somani
+ * **************************
+ */
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;

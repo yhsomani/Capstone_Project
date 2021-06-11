@@ -1,5 +1,9 @@
 package com.example.vchat;
-
+/*
+ ****************************
+ * Develop by Yash Somani
+ * **************************
+ */
 public class User {
     private String name,email,pass;
 
